@@ -1,0 +1,84 @@
+    /* Fundo gradiente */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg,
+          #000000 20%,
+          /* preto ocupa até 20% */
+          #0734af 50%,
+          /* azul escuro até 50% */
+          #4b0082 100%
+          /* roxo até o final */
+        );
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Container estilo vidro */
+    .glass-container {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      color: #fff;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: large;
+    }
+
+    /* Centralizar nome e interesses */
+    #nome-container,
+    #interesses-container {
+      text-align: center;
+    }
+
+
+    /* Botão de contato */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #ccc;
+    }
